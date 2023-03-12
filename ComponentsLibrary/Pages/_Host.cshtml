@@ -1,6 +1,6 @@
 ﻿@page "/"
 @using Microsoft.AspNetCore.Components.Web
-@namespace WebApp.Pages
+@namespace ComponentsLibrary.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <!DOCTYPE html>
@@ -11,9 +11,8 @@
     <base href="~/" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link href="css/site.css" rel="stylesheet" />
-    <link href="WebApp.styles.css" rel="stylesheet" />
+    <link href="ComponentsLibrary.styles.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="favicon.png"/>
-    <script src="_content/BlazorStrap/blazorstrap.js"></script>
     <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
 </head>
 <body>
@@ -31,8 +30,5 @@
     </div>
 
     <script src="_framework/blazor.server.js"></script>
-
-    @*BlazorStrap*@
-    <script src="_content/BlazorStrap/popper.min.js"></script>
 </body>
 </html>

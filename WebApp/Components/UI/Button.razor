@@ -1,14 +1,15 @@
 ﻿@inherits LayoutComponentBase
-@using BlazorStrap
+@using BlazorStrap 
 
-
+<BSButton Color="Color"> @renderFragment</BSButton>
 
 @code {
     [Parameter]
     public EventCallback<MouseEventArgs> OnClick { get; set; }
     [Parameter]
     public BSColor Color { get; set; }
-
+    [Parameter]
+    public RenderFragment? renderFragment { get; set; }
     void Clicked(MouseEventArgs e)
     {
         OnClick.InvokeAsync();

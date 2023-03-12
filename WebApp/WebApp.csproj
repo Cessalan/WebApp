@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="BlazorStrap" Version="5.1.100" />
+    <PackageReference Include="BlazorStrap.V5" Version="5.1.100" />
   </ItemGroup>
 
 </Project>
